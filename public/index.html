@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Node-RED in Bluemix</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+	<link href="css/simplegrid.css" rel="stylesheet" media="screen">
+	<link href="css/style.css" rel="stylesheet" media="screen">
+</head>
+
+
+<body>
+
+<div class="header">
+    <div class="header-content">
+        <a href="/"><img class="logo" src="images/node-red.png" /> IoT Closet Coming to You Soon! </a>
+    </div>
+</div>
+<!-- Grid 1 -->
+<div class="title">
+	<h2>Enter an image URL to begin</h2> <br/>
+	<form action="/" method="POST">
+	<input type="text" name="imageurl">
+	<input type="submit" name="initiate">
+	</form>
+</div>
+
+
+
+<script>
+
+$(function() {
+    
+	app.get("/", function(req, res) {
+		console.log("Clicked");
+	});
+	
+
+});
+</script>
+</body>
+</html>

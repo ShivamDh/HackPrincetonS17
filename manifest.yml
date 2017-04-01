@@ -1,0 +1,11 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: Clothing Classifier
+  host: Clothing-Classifier
+  disk_quota: 1024M
+  services:
+  - Clothing Classifier-cloudantNoSQLDB
+  - availability-monitoring-auto
